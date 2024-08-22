@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- tailwind and daisy cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- fontawsome cdn -->
-    <script
-      src="https://kit.fontawesome.com/1b582a989e.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- tailwind custom script -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              thcol: "#abef5f",
-            },
-            fontFamily: {
-              Manrope: ["Manrope"],
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- tailwind and daisy cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- fontawsome cdn -->
+  <script src="https://kit.fontawesome.com/1b582a989e.js" crossorigin="anonymous"></script>
+  <!-- google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+  <!-- tailwind custom script -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            thcol: "#abef5f",
+          },
+          fontFamily: {
+            Manrope: ["Manrope"],
           },
         },
-      };
-    </script>
+      },
+    };
+  </script>
 
-    <title>Document</title>
-  </head>
+  <title>Document</title>
+</head>
 
-  <body class="font-Manrope">
-    <header></header>
+<body class="font-Manrope">
+  <header class="container mx-auto">
+    <nav class="">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-3xl font-extrabold"><img src="./assets/arrow-white.png" alt="" /> Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base text-gray-600">
+            <li class="font-extrabold"><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="hidden navbar-end space-x-7 lg:flex text-gray-600">
+          <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+          <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+          <a class="btn bg-thcol rounded-3xl font-extrabold text-lg">Book Consult <img src="./assets/arrowblack.png"
+              alt="" /></a>
+        </div>
+        <div class="lg:hidden navbar-end mr-8">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
 
-    <main></main>
-    
-    <footer></footer>
-  </body>
+
+    <section class="flex items-stretch flex-col justify-center lg:items-center text-center my-8 space-y-5 p-4">
+      <img src="./assets/banner.png" alt="">
+      <h2 class="text-3xl lg:text-6xl font-black lg:font-extrabold">A barn house of this design has a striking appearance</h2>
+      <p class="font-medium text-slate-600">The barn house captivates with its blend of rustic charm and modern
+        sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with
+        natural light.</p>
+      <a class="btn bg-[#ccf79c] rounded-3xl font-extrabold text-lg border-2 border-thcol ">Book Consult <img src="./assets/arrow-white.png"
+          alt="" /></a>
+    </section>
+  </header>
+
+  <main></main>
+
+  <footer></footer>
+</body>
+
 </html>
